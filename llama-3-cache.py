@@ -22,8 +22,8 @@ if os.path.exists(model_path):
 else:
     st.write("Caching model...")
     # Load the original model and tokenizer
-    model = AutoModelForCausalLM.from_pretrained("decapoda-research/llama-3b-hf", device_map="auto")
-    tokenizer = AutoTokenizer.from_pretrained("decapoda-research/llama-3b-hf")
+    model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct, device_map="auto")
+    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct)
 
     # Save the model and tokenizer to the EFS file system
     model.save_pretrained(model_path)
