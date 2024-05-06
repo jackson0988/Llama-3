@@ -2,7 +2,8 @@
 import os
 import torch
 import streamlit as st
-from transformers import AutoTokenizer, AutoModelForCausualLM
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
 
 st.set_page_config(page_title="CohereLLM", page_icon=":rocket:", layout="wide")
 
